@@ -22,6 +22,7 @@ const FooterInfoItem = ({ icon, text }: FooterInfoItemProps) => {
         sx={{
           color: "rgba(251, 251, 251, 0.7)",
           fontWeight: 400,
+          textAlign: "center",
         }}
       >
         {text}
