@@ -1,0 +1,9 @@
+export { default as slot } from "./casino.png";
+export { default as character } from "./character.png";
+export { default as Download } from "./download.svg";
+export { default as Flag } from "./flag.svg";
+export { default as Limitation } from "./limitation.svg";
+export { default as License } from "./LicenseLogo.png";
+export { default as logo } from "./logo.png";
+export { default as bg } from "./background.png";
+export { default as socialIcons } from './socialIcons'
