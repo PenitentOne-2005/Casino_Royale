@@ -85,7 +85,8 @@ export const CasinoInfo = styled.div`
 `;
 
 export const Character = styled.img`
-  width: 288px;
+  width: 12.7%;
+  min-width: 210px;
 
   @media (max-width: 1200px) {
     display: none;
