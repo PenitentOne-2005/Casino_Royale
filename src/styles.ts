@@ -63,7 +63,7 @@ export const CasinoInfo = styled.div`
   justify-content: center;
   gap: 20px;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1201px) {
     flex-direction: column;
 
     &:not(:last-child) {
