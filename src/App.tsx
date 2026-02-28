@@ -123,7 +123,6 @@ const HomePage = () => {
             value={language}
             onChange={(e) => handleLanguageChange(e.target.value)}
             sx={selectStyles}
-            
             renderValue={(value) => (
               <Box sx={{ display: "flex", alignItems: "center", gap: "8px" }}>
                 <Flag />
@@ -141,7 +140,10 @@ const HomePage = () => {
           <SocialBlock>
             <Typography
               sx={{
-                textAlign: "end",
+                textAlign: {
+                  xs: "center",
+                  lg: "end",
+                },
                 color: "#bababa",
                 fontWeight: 400,
               }}

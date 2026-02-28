@@ -15,6 +15,10 @@ export const CenterSection = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  @media (max-width: 1200px) {
+    padding-block: 146px;
+  }
 `;
 
 export const SlotImage = styled.img`
@@ -51,7 +55,7 @@ export const DownloadCard = styled.div`
   border: 1px dashed orange;
   padding: 1.9%;
   border-radius: 20px;
-  width: 390px;
+  width: 360px;
 
   @media (max-width: 452px) {
     width: 320px;
