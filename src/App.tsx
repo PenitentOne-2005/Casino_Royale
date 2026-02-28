@@ -31,7 +31,15 @@ import {
 
 const HomePage = () => {
   const [openGame, setOpenGame] = useState(false);
-  const [language, setLanguage] = useState<Language>(() => getGeoLanguage());
+  const [language, setLanguage] = useState<Language>(() => {
+    const savedLanguage = localStorage.getItem("language") as Language | null;
+
+    if (savedLanguage) {
+      return savedLanguage;
+    }
+
+    return getGeoLanguage();
+  });
 
   const t = translations[language];
 
@@ -39,6 +47,7 @@ const HomePage = () => {
 
   const handleLanguageChange = (value: Language) => {
     setLanguage(value);
+    localStorage.setItem("language", value);
   };
 
   const handleOpenGame = (value: boolean) => {
